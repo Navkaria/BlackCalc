@@ -1,0 +1,442 @@
+//!=============================== END ===============================//
+//?===================================================================//
+//*============================== START ==============================//
+.page {
+
+
+    // .page__container
+    &__container {
+        
+    }
+}
+
+.fons {
+    background-color: $foot;
+}
+
+.leter-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    padding: rem(100) rem(0) rem(0) rem(0);
+}
+
+.leter {
+    display: flex;
+    margin-top: rem(144);
+    margin-bottom: rem(116);
+    
+    
+
+    // .leter__info
+    &__info {
+        padding: rem(13) rem(0) rem(0) rem(0);
+        
+    }
+
+}
+.img-info {
+    margin-right: rem(24);
+    justify-content: space-between;
+    
+    
+
+
+}
+.let {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: rem(15)
+
+}
+
+
+.text {
+    // .text__info
+    &__info {
+        color: $text1;
+    }
+}
+
+
+//!=============================== END ===============================//
+//?===================================================================//
+//*============================== START ==============================//
+
+
+.leter {
+
+    img{
+        transition: .4s;
+        &:hover{
+            transform: rotate(45deg);
+            transition: .3s ;
+        }
+    }
+    // .leter__check
+    &__check {
+        margin-top: rem(100);
+    }
+}
+.check-how {
+    text-align: center
+}
+.let {
+    
+}
+.text {
+
+    // .text__center
+    &__center {
+        
+    }
+
+    // .text__info
+    &__inf {
+        color: $text1;
+        font-size: 18px;
+        width: rem(622);
+    }
+}
+
+.text12{
+    margin-left: rem(290);
+    margin-top: rem(25);
+}
+
+//?===================================================================//
+
+.calculate-block {
+    margin-top: rem(64);
+}
+.calkulate {
+    max-width: rem(942);
+    margin: 0 auto;
+    background: $block2;
+    border-radius: 16px 16px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    padding: rem(48) rem(48) rem(48) rem(49);
+    align-items: center;
+    height: 59px;
+    
+}
+
+.blok1 {
+    order: none;
+    background-color: $block2;
+    border-bottom: 1px solid $text1;
+    height: 38px;
+    flex: 1 1 300px;
+
+		// .blok1__enter
+		&__enter {
+            font-size: 20px;
+            color: $block1;
+            outline:none;
+            width: rem(403);
+            padding-bottom: rem(1);
+            &::placeholder{
+                color: $block1;
+                font-weight: 400;
+            }
+		} 
+}
+.blok2 {
+    border: none;
+    outline:none;
+    background-color: $block2;
+    border-bottom: 1px  solid  $text1;
+    height: 38px;
+    margin-right: 48px;
+    margin-left: 48px;
+    flex: 1 1 200px;
+		// .blok2__th
+		&__th {
+            font-size: 15px;
+            color: $block1;        
+		}
+}
+.butt {
+}
+
+.btn {
+    
+    // .btn__bt
+    &__bt {
+        background-color: $button;
+        padding: rem(14) rem(32) ;
+        border-radius: 32px;
+        flex: 1 1 200px;
+        transition: .4s;
+            &:hover{
+                background-color: $hov;
+                box-shadow: 0px 0px 15px #525252;
+            }
+    }
+}
+
+//!=============================== END ===============================//
+//?===================================================================//
+//*============================== START ==============================//
+
+.font {
+    background-color: $block2;
+}
+.estimated {
+    
+		// .estimated__container
+
+		&__container {
+		}
+
+		// .estimated__block
+
+		&__block {
+            color: $block1;
+            max-width: rem(942);
+            margin: 0 auto;
+            background: $mainColor;
+            border-radius: 0px 0px 16px 16px;
+            box-shadow: 0px 50px 70px #3917772f;
+            padding: rem(48) rem(48) rem(48) rem(48);
+            align-items: center;
+
+		}
+
+		// .estimated__hours
+
+		&__hours { 
+            text-transform: uppercase;
+            color: $button;
+		}
+
+		// .estimated__result
+
+		&__result {
+            margin: rem(16) rem(0) rem(16) rem(0);
+            font-weight: 700;
+            font-size: 32px;
+                span{
+                    color: $button;
+                }
+		}
+}
+.text-o {
+color: $o;
+}
+
+//!=============================== END ===============================//
+//?===================================================================//
+//*============================== START ==============================//
+
+.crypto{
+    &__bg{
+        
+    }
+    &__container{
+        text-align: center;
+    }
+    &__title{
+        padding-top: rem(100);
+        margin-bottom: rem(64);
+        font-weight: 700;
+        font-size: rem(40);
+        line-height: 150%;
+        color: $block1;
+    }
+    &__items{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: rem(100);
+    }
+    &-item{
+        margin-bottom: rem(45);
+        flex: 0 0 30%;
+        background-color: $mainColor;
+        padding: rem(48) 0;
+        backdrop-filter: blur(rem(250));
+        border-radius: rem(16);
+        box-shadow: 0 rem(0.4) rem(20) #39177731;
+        transition: .3s ;
+        &:hover{
+            background-color: $hov;
+            box-shadow: 0 rem(0.4) rem(40)  #39177760;
+        }
+        &:hover .crypto-item__title, &:hover .crypto-item__text{
+            color: $mainColor;
+    
+        }
+        &:hover .crypto-item__link-text{
+            width: rem(133);
+        }
+        &:hover .crypto-item__link{
+            background-color: $button;
+        }
+        &:hover .crypto-item__link-icon{
+            transform: scale(0.6);
+            border: rem(1) solid $mainColor;
+        }
+
+        &:hover .crypto-item__img{
+            transform: rotate(-25deg);
+        }
+        
+
+        &__img{
+            margin-bottom: rem(48);
+            transition:  all .3s;
+        }
+        &__title{
+            margin-bottom: rem(16);
+            font-weight: 700;
+            font-size: rem(32);
+            line-height: 150%;
+            transition: .2s;
+            color: $block1;
+        }
+        &__type{
+            font-weight: 500;
+            font-size: rem(18);
+            line-height: 150%;
+            color: #adadad;
+            
+        }
+        &__text{
+            display: inline-block;
+            margin-bottom: rem(40);
+            max-width: rem(322);
+            color: $o;
+            transition: .1s;
+        }
+        &__link{
+            margin-bottom: rem(48);
+            background-color: $mainColor;
+            color: $mainColor;
+            padding: rem(0) rem(15);
+            border-radius: rem(32);
+            font-size: rem(18);
+            border-radius: rem(32);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: rem(205);
+            margin: 0 auto;
+            transition: .4s;
+            &-text{
+                font-size: rem(18);
+                font-weight: 500;
+                width: 0;
+                transition: .3s;
+            }
+            &-icon{
+                background-color: $mainColor;
+                width: rem(64);
+                height: rem(64);
+                display: block;
+                border-radius: 100%;
+                background-image: url(../img/strell.svg);
+                background-repeat: no-repeat;
+                background-position: center center;
+                border: rem(1) solid rgba($hov, 0.2);
+                transform: scale(1);
+                transition: .4s;
+            }
+        }
+    }
+}
+
+//!=============================== END ===============================//
+//?===================================================================//
+//*============================== START ==============================//
+
+.mining {
+
+    // .mining__bg
+    &__bg {
+        background: linear-gradient(180deg, #2B076E 0%, #0D0D2B 100%);
+        padding: rem(88) rem(120);
+    }
+
+    // .mining__container
+    &__container {
+        
+    }
+
+     // .mining__df
+    &__df {
+        background-color: $button;
+        padding: rem(48) rem(48);
+        border-radius: rem(16);
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    // .mining__info
+    &__info {
+
+    }
+
+    // .mining__info-title
+    &__info-title {
+        font-weight: 700;
+        font-size: rem(32);
+        margin-bottom: rem(16);
+    }
+
+    // .mining__info-text
+    &__info-text {
+        width: rem(348);
+        line-height: rem(28);
+    }
+
+    // .mining__poles
+    &__poles {
+        
+    }
+
+    // .mining__poles-text
+    &__poles-text {
+        
+        
+    }
+
+    // .mining__poles-text-enter
+    &__poles-text-enter {
+        margin-top: rem(22);
+        color: $block2;
+        outline: none;
+        background-color: $button;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+        width: rem(374);
+            &::placeholder{
+                color: $block2;
+                font-weight: 400;
+            }
+    }
+
+    // .mining__poles-button
+    &__poles-button {
+		
+    }
+
+    // .mining__poles-button-text
+    &__poles-button-text {
+        margin-top: rem(12);
+        color: $block1;
+        background-color: $block2;
+        padding: rem(14) rem(34);
+        border-radius: rem(32);
+        transition: .4s;
+        &:hover{
+			background-color: $fon;
+			box-shadow: 0px 0px 15px $mainColor;
+            color: $block2;
+		
+        }
+    }
+}
+
+//!=============================== END ===============================//
+//?===================================================================//
